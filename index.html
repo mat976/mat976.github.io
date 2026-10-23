@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoScan — On Chain Tracker | Suivi de portefeuille crypto en lecture seule</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="Logo CryptoScan">
+        CryptoScan <span class="brand-sub">On Chain Tracker</span>
+      </a>
+      <nav class="main-nav">
+        <a href="#features">Fonctionnalités</a>
+        <a href="#chains">Réseaux</a>
+        <a href="privacy.html">Confidentialité</a>
+        <a class="btn btn-primary nav-cta" style="height:40px;padding:0 18px;font-size:13.5px;" href="https://play.google.com/store/apps/details?id=com.cryptoscan.com" rel="noopener">Google Play</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div>
+          <span class="badge"><span class="dot"></span>Watch-only · Aucune clé privée · Open Source</span>
+          <h1>Votre portefeuille crypto,<br><span class="accent-text">en lecture seule.</span></h1>
+          <p class="lead">
+            CryptoScan consolide les données on-chain de vos adresses publiques dans une seule vue :
+            soldes, tokens, historique et cours de marché. Vos données restent sur votre appareil,
+            dans une base locale chiffrable et exportable.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.cryptoscan.com" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 20 12 6 21 6 3" fill="currentColor" stroke="none"/></svg>
+              Télécharger sur Google Play
+            </a>
+            <a class="btn btn-outline" href="privacy.html">Politique de confidentialité</a>
+          </div>
+          <p class="hero-note">Outil technique d'affichage passif — ne constitue pas un conseil en investissement.</p>
+        </div>
+
+        <!-- Aperçu façon application -->
+        <div class="phone-wrap" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="mock-chips">
+                <span class="mock-chip active">All (133)</span>
+                <span class="mock-chip">TAO</span>
+                <span class="mock-chip">PHOENIX</span>
+                <span class="mock-chip">SOL</span>
+                <span class="mock-chip">SUI</span>
+              </div>
+              <div class="app-card">
+                <div class="mock-row">
+                  <span class="mock-pill">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="13" height="13" rx="3"/><path d="M16 8V6a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3v7a3 3 0 0 0 3 3h2"/></svg>
+                    Consolidated Balance
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="var(--text-secondary)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </span>
+                  <span class="mock-sub">133 shared cryptos</span>
+                </div>
+                <div class="mock-row">
+                  <span class="mock-pill"><span style="color:var(--positive);font-weight:800;">τ</span> 234.46&nbsp;€</span>
+                </div>
+                <div class="mock-balance-row">
+                  <span class="mock-balance">2645.56&nbsp;€</span>
+                  <span class="mock-eye">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </span>
+                </div>
+                <div class="mock-row">
+                  <span class="mock-gain">+2588.58&nbsp;€</span>
+                  <span class="mock-pill up">↗ 4543%</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                </div>
+                <div class="mock-row">
+                  <span class="mock-pill accent">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="15 7 21 7 21 13"/></svg>
+                    By crypto &amp; Top 1
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg>
+                  </span>
+                </div>
+                <div class="mock-row" style="margin-bottom:14px;">
+                  <span class="mock-sub">Synced on 23/10/2026 à 12:41</span>
+                  <span class="mock-pill accent">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                    Syncing
+                  </span>
+                </div>
+                <div class="alloc-bar">
+                  <span style="width:58.7%;background:#4BD6A0;"></span>
+                  <span style="width:33.7%;background:#F5A623;"></span>
+                  <span style="width:2.8%;background:#9B5CF6;"></span>
+                  <span style="width:2.2%;background:#4C8DFF;"></span>
+                  <span style="width:2.1%;background:#3EC9BD;"></span>
+                  <span style="width:0.1%;background:#34D399;"></span>
+                  <span style="width:0.4%;background:#64748B;"></span>
+                </div>
+                <div class="alloc-legend">
+                  <span class="li"><span class="dot" style="background:#4BD6A0;"></span>TAO 58.7%</span>
+                  <span class="li"><span class="dot" style="background:#F5A623;"></span>BTC 33.7%</span>
+                  <span class="li"><span class="dot" style="background:#9B5CF6;"></span>JitoSOL 2.8%</span>
+                  <span class="li"><span class="dot" style="background:#4C8DFF;"></span>haSUI 2.2%</span>
+                  <span class="li"><span class="dot" style="background:#3EC9BD;"></span>KAS 2.1%</span>
+                  <span class="li"><span class="dot" style="background:#34D399;"></span>MANA 0.1%</span>
+                  <span class="li"><span class="dot" style="background:#64748B;"></span>Other 0.4%</span>
+                </div>
+                <div class="mock-chart">
+                  <svg viewBox="0 0 300 170" width="100%" height="150" preserveAspectRatio="none" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#4BD6A0" stop-opacity="0.32"/>
+                        <stop offset="1" stop-color="#4BD6A0" stop-opacity="0"/>
+                      </linearGradient>
+                    </defs>
+                    <line x1="4" y1="158" x2="296" y2="158" stroke="#232E3D" stroke-width="1.5" stroke-dasharray="4 5"/>
+                    <path d="M4 150 H78 L102 98 H140 L170 38 H208 L232 32 H296 V162 H4 Z" fill="url(#areaGrad)"/>
+                    <path d="M4 150 H78 L102 98 H140 L170 38 H208 L232 32 H296" fill="none" stroke="#4BD6A0" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+                    <circle cx="296" cy="32" r="4" fill="#4BD6A0" stroke="#141A23" stroke-width="2"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fonctionnalités -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Fonctionnalités</div>
+          <h2>Un agrégateur on-chain, pensé pour la confidentialité</h2>
+          <p>Collez une adresse publique, la chaîne est détectée automatiquement. CryptoScan fait le reste, sans jamais toucher à vos fonds.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>100 % lecture seule</h3>
+            <p>Aucune clé privée, aucune seed phrase, aucune signature. L'application ne peut ni émettre ni transférer de crypto-actifs.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </div>
+            <h3>Multi-chaînes</h3>
+            <p>Bitcoin, Ethereum et réseaux EVM, Solana, Bittensor et Kaspa. Détection automatique de la chaîne à partir de l'adresse.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3>Données locales</h3>
+            <p>Wallets suivis, libellés et historique des relevés sont confinés dans une base SQLite sandboxée sur votre appareil.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            </div>
+            <h3>Cours de marché</h3>
+            <p>Valorisation en temps réel via CoinGecko, graphiques de performance et suivi historique de vos positions.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3>Sauvegarde chiffrée</h3>
+            <p>Exportez vos données en AES-256-GCM avec dérivation PBKDF2 (100 000 itérations). Réimportez-les sur n'importe quel appareil.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3>Rafraîchissement maîtrisé</h3>
+            <p>Interrogez les nœuds RPC publics par défaut ou configurez vos propres endpoints privés dans les réglages.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Réseaux supportés -->
+    <section class="section" id="chains">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Réseaux</div>
+          <h2>Les principales chaînes, une seule vue</h2>
+          <p>Chaque blockchain dispose de son propre service dédié, avec un format de données unifié pour l'affichage.</p>
+        </div>
+        <div class="chain-grid">
+          <div class="chain-card">
+            <span class="chain-icon" style="color:#F7931A;">₿</span>
+            <span><span class="c-name">Bitcoin</span><br><span class="c-sub">mempool.space · blockstream.info</span></span>
+          </div>
+          <div class="chain-card">
+            <span class="chain-icon" style="color:#8DA8FF;">Ξ</span>
+            <span><span class="c-name">Ethereum / EVM</span><br><span class="c-sub">1rpc.io · publicnode · cloudflare-eth</span></span>
+          </div>
+          <div class="chain-card">
+            <span class="chain-icon" style="color:#4BD6A0;">◎</span>
+            <span><span class="c-name">Solana</span><br><span class="c-sub">mainnet-beta · publicnode</span></span>
+          </div>
+          <div class="chain-card">
+            <span class="chain-icon" style="color:#F3F5F7;">τ</span>
+            <span><span class="c-name">Bittensor</span><br><span class="c-sub">opentensor · taostats</span></span>
+          </div>
+          <div class="chain-card">
+            <span class="chain-icon" style="color:#6B8AF0;">K</span>
+            <span><span class="c-name">Kaspa</span><br><span class="c-sub">api.kaspa.org</span></span>
+          </div>
+          <div class="chain-card">
+            <span class="chain-icon" style="color:#F5B942;">$</span>
+            <span><span class="c-name">Cours de marché</span><br><span class="c-sub">api.coingecko.com</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confidentialité -->
+    <section class="section" id="privacy">
+      <div class="container">
+        <div class="split-card">
+          <div>
+            <h2>Confidentialité par conception</h2>
+            <p>
+              Aucune donnée personnelle n'est transmise à l'éditeur. Les requêtes partent directement
+              de votre appareil vers les nœuds blockchain, et vos informations de suivi restent dans
+              la base locale de votre téléphone. Consultez le détail des traitements, de la publicité
+              Google Mobile Ads et de vos droits RGPD.
+            </p>
+          </div>
+          <div>
+            <a class="btn btn-outline" href="privacy.html">Lire la politique de confidentialité</a>
+          </div>
+        </div>
+        <div style="height:24px"></div>
+        <div class="disclaimer">
+          <strong>Avertissement sur les risques :</strong> CryptoScan est un outil technique d'affichage
+          passif en lecture seule. Les informations et cours affichés ne constituent aucunement un
+          conseil en investissement ou un service financier réglementé. L'investissement dans les
+          crypto-actifs comporte un risque élevé de perte en capital.
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <a class="brand" href="index.html" style="font-size:16px;">
+          <img src="assets/logo.svg" alt="Logo CryptoScan" style="width:28px;height:28px;">
+          CryptoScan
+        </a>
+        <p class="copyright">© 2026 Projet Open-Source CryptoScan — Tous droits réservés.</p>
+      </div>
+      <div class="footer-links">
+        <a href="terms.html">Conditions d'utilisation</a>
+        <a href="terms-en.html">Terms of Service (EN)</a>
+        <a href="privacy.html">Politique de confidentialité</a>
+        <a href="privacy-en.html">Privacy Policy (EN)</a>
+        <a href="mailto:support@cryptoscan.app">support@cryptoscan.app</a>
+        <a href="https://play.google.com/store/apps/details?id=com.cryptoscan.com" rel="noopener">Google Play</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
