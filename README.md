@@ -66,7 +66,7 @@ Points de conformité Google vérifiés :
 
 ## À personnaliser
 
-- `support@cryptoscan.app` : adresse de contact indiquée dans la politique —
+- `matisse.demontis@proton.me` : adresse de contact indiquée dans la politique —
   remplacer par l'adresse réelle du compte développeur si différente.
 - Date « Dernière mise à jour » : ajuster au jour de publication.
 - `assets/logo.svg` : remplacer par le futur logo si l'icône de l'app change.
