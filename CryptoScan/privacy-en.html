@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — CryptoScan</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="CryptoScan logo">
+        CryptoScan <span class="brand-sub">On Chain Tracker</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#chains">Networks</a>
+        <a href="privacy.html">Version française</a>
+        <a class="btn btn-primary nav-cta" style="height:40px;padding:0 18px;font-size:13.5px;" href="https://play.google.com/store/apps/details?id=com.cryptoscan.com" rel="noopener">Google Play</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="legal-hero">
+      <div class="container">
+        <h1>Privacy Policy &amp; Legal Notice</h1>
+        <p class="meta">
+          Application: <strong>CryptoScan — On Chain Tracker</strong> ·
+          Package name: <code>com.cryptoscan.com</code> ·
+          Last updated: October 22, 2026
+        </p>
+      </div>
+    </section>
+
+    <div class="legal-body">
+      <div class="container legal-layout">
+
+        <aside class="toc">
+          <div class="toc-title">Contents</div>
+          <a href="#publisher">1. Publisher</a>
+          <a href="#service">2. Nature of the service</a>
+          <a href="#data">3. Data processing &amp; GDPR</a>
+          <a href="#legal-basis">4. Legal basis</a>
+          <a href="#security">5. Backups &amp; security</a>
+          <a href="#rights">6. Your rights</a>
+          <a href="#risk">7. Financial risk notice</a>
+        </aside>
+
+        <article class="legal-content">
+
+          <h2 id="publisher">1. Publisher &amp; hosting</h2>
+          <h3>1.1. Application publisher</h3>
+          <ul>
+            <li><strong>Project / Publisher:</strong> CryptoScan Open-Source Project</li>
+            <li><strong>Support &amp; GDPR contact:</strong> <a href="mailto:matisse.demontis@proton.me">matisse.demontis@proton.me</a></li>
+            <li><strong>Activity:</strong> development and distribution of consumer utility software for viewing distributed ledgers (blockchains).</li>
+          </ul>
+          <h3>1.2. Hosting</h3>
+          <ul>
+            <li><strong>Website and public policy:</strong> hosted on GitHub Pages infrastructure (GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA).</li>
+          </ul>
+
+          <h2 id="service">2. Nature of the service (watch-only / read-only)</h2>
+          <p>
+            CryptoScan is a technical tool that displays, aggregates and tracks public data
+            from distributed ledgers (blockchains).
+          </p>
+          <ul>
+            <li><strong>No private keys:</strong> the app never generates, requests, handles or stores any private key, recovery phrase (seed phrase) or wallet password.</li>
+            <li><strong>No financial transactions:</strong> the app cannot send, transfer, deposit, swap or withdraw crypto-assets or fiat currency.</li>
+            <li><strong>No financial advice:</strong> all data, charts, prices and simulations are provided for technical and informational purposes only. They do not constitute investment advice or a regulated financial service under the EU MiCA regulation.</li>
+          </ul>
+
+          <h2 id="data">3. Personal data processing &amp; GDPR (Regulation EU 2016/679)</h2>
+
+          <h3>3.1. Data stored locally on your device</h3>
+          <ul>
+            <li><strong>Data categories:</strong> public blockchain addresses entered by the user, custom labels, past balance snapshots, display preferences.</li>
+            <li><strong>Storage:</strong> confined exclusively to the sandboxed local SQLite database on your smartphone.</li>
+            <li><strong>Access:</strong> none of this data is transmitted to the publisher or to any proprietary server. The publisher has no access to your wallet.</li>
+          </ul>
+
+          <h3>3.2. Direct network communications (RPC nodes and explorers)</h3>
+          <p>
+            To query the balances of the public addresses you watch, your device directly
+            contacts the following endpoints:
+          </p>
+          <ul>
+            <li>Bitcoin: <code>mempool.space</code>, <code>blockstream.info</code></li>
+            <li>Ethereum / EVM: <code>1rpc.io</code>, <code>ethereum-rpc.publicnode.com</code>, <code>cloudflare-eth.com</code></li>
+            <li>Solana: <code>api.mainnet-beta.solana.com</code>, <code>solana-rpc.publicnode.com</code></li>
+            <li>Bittensor: <code>lite.chain.opentensor.ai</code>, <code>api.taostats.io</code></li>
+            <li>Kaspa: <code>api.kaspa.org</code></li>
+            <li>Market prices: <code>api.coingecko.com</code></li>
+          </ul>
+          <div class="callout">
+            <strong>Privacy note:</strong> with each HTTPS request, your public IP address is
+            transmitted to the remote third-party servers for technical routing requirements,
+            in accordance with those providers' privacy policies. You may use a VPN or configure
+            your own private RPC nodes in Settings to preserve your network anonymity.
+          </div>
+
+          <h3>3.3. Monetization &amp; advertising (Google Mobile Ads / AdMob)</h3>
+          <p>The app embeds the Google Mobile Ads SDK to display advertisements.</p>
+          <ul>
+            <li><strong>Data processed by Google:</strong> device technical identifiers (Google Advertising ID / IDFA), approximate IP address (for regional geo-targeting), ad interaction data and technical diagnostics.</li>
+            <li><strong>Consent collection (CMP / IAB TCF v2.2):</strong> in the European Economic Area (EEA) and the United Kingdom, the app uses the certified Google User Messaging Platform (UMP). No advertising tracker is activated without your prior consent.</li>
+            <li><strong>Managing your choices:</strong> you can modify or revoke your advertising consent at any time from the app's Settings screen via the "Privacy preferences (GDPR)" button.</li>
+          </ul>
+
+          <h2 id="legal-basis">4. Legal basis for processing (Art. 6 GDPR)</h2>
+          <ol>
+            <li><strong>Performance of the service (Art. 6(1)(b) GDPR):</strong> local processing of public addresses to display your portfolio.</li>
+            <li><strong>Consent (Art. 6(1)(a) GDPR):</strong> storage of identifiers and delivery of targeted advertising via Google AdMob.</li>
+            <li><strong>Legitimate interest (Art. 6(1)(f) GDPR):</strong> ad fraud prevention and technical security of the application.</li>
+          </ol>
+
+          <h2 id="security">5. Backups &amp; cryptographic security (Art. 32 GDPR)</h2>
+          <ul>
+            <li>The app lets you export your backups in encrypted <code>.enc</code> format.</li>
+            <li>The algorithm used is the international standard <strong>AES-256-GCM</strong>, with <strong>PBKDF2-HMAC-SHA256 key derivation (100,000 iterations)</strong> and a random 16-byte cryptographic salt.</li>
+            <li>Export compliance: compliant with US EAR export regulations (Mass Market Category 5D992.c) and declared to the competent authorities (ANSSI in France).</li>
+          </ul>
+
+          <h2 id="rights">6. Your rights (GDPR Articles 15 to 22)</h2>
+          <p>
+            Under European regulation, you have the right to access, rectify, port and
+            delete your data:
+          </p>
+          <ul>
+            <li><strong>Full deletion:</strong> by uninstalling the app or using the "Reset" button in Settings, all of your local SQLite data is instantly destroyed with no remote copy.</li>
+            <li><strong>Complaint:</strong> you have the right to lodge a complaint with your national supervisory authority (in France: CNIL — <a href="https://www.cnil.fr" rel="noopener">www.cnil.fr</a>).</li>
+          </ul>
+
+          <h2 id="risk">7. Financial risk disclaimer</h2>
+          <p>
+            Investing in crypto-assets carries a high risk of capital loss due to extreme market
+            volatility. Past performance and variation simulations (staking / dTAO) are purely
+            indicative and do not guarantee future results.
+          </p>
+
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <a class="brand" href="index.html" style="font-size:16px;">
+          <img src="assets/logo.svg" alt="CryptoScan logo" style="width:28px;height:28px;">
+          CryptoScan
+        </a>
+        <p class="copyright">© 2026 CryptoScan Open-Source Project — All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="terms-en.html">Terms of Service (EN)</a>
+        <a href="terms.html">Conditions d'utilisation (FR)</a>
+        <a href="privacy-en.html">Privacy Policy (EN)</a>
+        <a href="privacy.html">Politique de confidentialité (FR)</a>
+        <a href="data-deletion-en.html">Data deletion (EN)</a>
+        <a href="mailto:matisse.demontis@proton.me">matisse.demontis@proton.me</a>
+        <a href="https://play.google.com/store/apps/details?id=com.cryptoscan.com" rel="noopener">Google Play</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,18 +1,51 @@
-# CryptoScan — Site web & politique de confidentialité
+# Site web multi-applications (GitHub Pages)
 
-Site statique (HTML/CSS, aucun build, aucune dépendance) pour l'application
-**CryptoScan — On Chain Tracker** (`com.cryptoscan.com`).
+Site statique (HTML/CSS, aucun build) hébergé sur `https://mat976.github.io/`.
+Chaque application vit dans **son propre sous-dossier**, ce qui permet d'en
+ajouter d'autres sans toucher aux URL existantes.
 
-## Contenu
+## Structure
 
-| Fichier             | Rôle                                                        |
-|---------------------|-------------------------------------------------------------|
-| `index.html`        | Landing page (présentation, fonctionnalités, réseaux)       |
-| `terms.html`        | Conditions Générales d'Utilisation (CGU en français)        |
-| `terms-en.html`     | Terms of Service (EN — version anglaise pour Google Play)   |
-| `privacy.html`      | Politique de confidentialité (FR) — URL pour la Play Console |
-| `privacy-en.html`   | Privacy Policy (EN) — version anglaise pour la review Google |
-| `assets/logo.svg`   | Logo officiel On Chain Wallet / CryptoScan                  |
+```
+/
+├── index.html                  Portail : liste des applications
+├── privacy.html                ↳ redirection vers CryptoScan/
+├── privacy-en.html             ↳ redirection
+├── terms.html                  ↳ redirection
+├── terms-en.html               ↳ redirection
+├── data-deletion.html          ↳ redirection
+├── data-deletion-en.html       ↳ redirection
+└── CryptoScan/
+    ├── index.html              Landing page
+    ├── privacy.html            Politique de confidentialité (FR)
+    ├── privacy-en.html         Privacy Policy (EN)
+    ├── terms.html              CGU (FR)
+    ├── terms-en.html           Terms of Service (EN)
+    ├── data-deletion.html      Suppression des données (FR)
+    ├── data-deletion-en.html   Data deletion (EN)
+    └── assets/                 CSS, logo, favicon, captures
+```
+
+## URL à utiliser dans la Play Console
+
+| Champ | URL |
+|---|---|
+| Règles de confidentialité | `https://mat976.github.io/CryptoScan/privacy.html` |
+| (version EN) | `https://mat976.github.io/CryptoScan/privacy-en.html` |
+| Conditions d'utilisation | `https://mat976.github.io/CryptoScan/terms.html` |
+| Suppression des données | `https://mat976.github.io/CryptoScan/data-deletion.html` |
+| Site web (fiche) | `https://mat976.github.io/CryptoScan/` |
+
+Les anciennes URL à la racine (`/privacy-en.html`, `/data-deletion.html`…)
+existent toujours sous forme de redirections : les liens déjà enregistrés
+dans la Play Console continuent de fonctionner.
+
+## Ajouter une nouvelle application
+
+1. Créer un dossier au nom de l'app : `MonAppli/`
+2. Y copier la structure d'une app existante (`index.html`, `privacy*.html`, `terms*.html`, `assets/`)
+3. Ajouter une carte dans le `index.html` racine (bloc `<main>`)
+4. Si l'ancienne app avait des pages à la racine, créer les redirections correspondantes
 
 ## Prévisualisation locale
 
@@ -20,53 +53,18 @@ Site statique (HTML/CSS, aucun build, aucune dépendance) pour l'application
 cd on_chain_website
 python3 -m http.server 8080
 # → http://localhost:8080
+# → http://localhost:8080/CryptoScan/
 ```
 
-## Mise en ligne (au choix)
+## Déploiement
 
-### Option A — GitHub Pages (recommandé, gratuit, HTTPS inclus)
+Repo GitHub Pages (`mat976/mat976.github.io`) : un simple `git push` sur `main`
+publie le site à `https://mat976.github.io/`.
 
-```bash
-cd on_chain_website
-git init && git add -A && git commit -m "Site CryptoScan"
-git remote add origin git@github.com:<ton-compte>/cryptoscan-site.git
-git push -u origin main
-```
+## Points de conformité Google
 
-Puis dans GitHub : **Settings → Pages → Source : main / root**.
-URL obtenue : `https://<ton-compte>.github.io/cryptoscan-site/`
-
-### Option B — Netlify / Cloudflare Pages
-
-Glisser-déposer le dossier sur <https://app.netlify.com/drop> ou connecter le
-repo sur Cloudflare Pages. HTTPS et disponibilité mondiale inclus.
-
-## Play Console
-
-Une fois le site en ligne :
-- Dans **Fiche Play Store → Règles de confidentialité** :
-  ```
-  https://<ton-domaine>/privacy.html
-  ```
-  (ou `privacy-en.html` en anglais)
-- Si demandé dans la fiche ou pour les conditions d'utilisation :
-  ```
-  https://<ton-domaine>/terms.html
-  ```
-  (ou `terms-en.html` en anglais)
-
-Points de conformité Google vérifiés :
-
-- page Web standard (pas de PDF), accessible sans connexion ni géorestriction ;
-- HTTPS valide (GitHub Pages / Netlify / Cloudflare le fournissent) ;
-- politique spécifique à l'app : collecte locale SQLite, endpoints RPC tiers,
-  SDK Google Mobile Ads / UMP, droits RGPD ;
-- prévoir aussi un lien vers cette URL **dans l'app** (écran Réglages / Mentions
-  légales) : Google l'exige sur la fiche *et* dans l'application.
-
-## À personnaliser
-
-- `matisse.demontis@proton.me` : adresse de contact indiquée dans la politique —
-  remplacer par l'adresse réelle du compte développeur si différente.
-- Date « Dernière mise à jour » : ajuster au jour de publication.
-- `assets/logo.svg` : remplacer par le futur logo si l'icône de l'app change.
+- page Web standard (pas un PDF), accessible sans connexion ni géorestriction
+- HTTPS valide (fourni par GitHub Pages)
+- politique spécifique à l'app : stockage local SQLite, endpoints RPC tiers,
+  SDK Google Mobile Ads / UMP, droits RGPD
+- lien vers la politique également **dans l'app** (Réglages → Mentions légales)
