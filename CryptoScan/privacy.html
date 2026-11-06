@@ -24,7 +24,7 @@
         <a href="index.html#features">Fonctionnalités</a>
         <a href="index.html#chains">Réseaux</a>
         <a href="privacy-en.html">English version</a>
-        <a class="btn btn-primary nav-cta" style="height:40px;padding:0 18px;font-size:13.5px;" href="https://play.google.com/store/apps/details?id=com.cryptoscan.com" rel="noopener">Google Play</a>
+        <a class="btn btn-primary nav-cta" style="height:40px;padding:0 18px;font-size:13.5px;" href="https://play.google.com/store/apps/details?id=com.CryptoSCAN.com" rel="noopener">Google Play</a>
       </nav>
     </div>
   </header>
@@ -57,12 +57,14 @@
 
         <article class="legal-content">
 
-          <h2 id="mentions">1. Mentions légales (Loi LCEN Art. 6-III)</h2>
+          <h2 id="mentions">1. Mentions légales (Loi LCEN Art. 6-III &amp; RGPD)</h2>
           <h3>1.1. Éditeur de l'application</h3>
           <ul>
-            <li><strong>Nom du projet / Éditeur :</strong> Projet Open-Source CryptoScan</li>
-            <li><strong>Contact support &amp; RGPD :</strong> <a href="mailto:matisse.demontis@proton.me">matisse.demontis@proton.me</a></li>
-            <li><strong>Nature de l'activité :</strong> développement et distribution de logiciels utilitaires grand public pour la visualisation de registres distribués (blockchain).</li>
+            <li><strong>Éditeur / Développeur :</strong> DEMONTIS Matisse (Micro-entreprise MATISDEV)</li>
+            <li><strong>Immatriculation :</strong> SIREN 942 978 586 · SIRET 942 978 586 00017 (RCS Saint-Denis de La Réunion)</li>
+            <li><strong>Siège :</strong> 99 Avenue Leconte de Lisle, 97490 Saint-Denis, France</li>
+            <li><strong>Contact support &amp; DPO :</strong> <a href="mailto:matisse.demontis@proton.me">matisse.demontis@proton.me</a></li>
+            <li><strong>Activité :</strong> Édition de logiciels applicatifs (Code APE 58.29C).</li>
           </ul>
           <h3>1.2. Hébergement</h3>
           <ul>
@@ -89,25 +91,28 @@
             <li><strong>Accès :</strong> aucune de ces données n'est transmise à l'éditeur ou à des serveurs propriétaires. L'éditeur ne dispose d'aucun accès à votre portefeuille.</li>
           </ul>
 
-          <h3>3.2. Communications réseau directes (nœuds RPC et explorateurs)</h3>
+          <h3>3.2. Communications réseau directes (nœuds RPC, APIs &amp; explorateurs)</h3>
           <p>
-            Pour interroger les soldes des adresses publiques que vous surveillez, votre appareil
-            contacte directement les points d'accès suivants :
+            Pour interroger les soldes, jetons et historiques des adresses publiques que vous surveillez, votre appareil
+            contacte directement en HTTPS les points d'accès décentralisés et explorateurs publics tiers suivants :
           </p>
           <ul>
-            <li>Bitcoin : <code>mempool.space</code>, <code>blockstream.info</code></li>
-            <li>Ethereum / EVM : <code>1rpc.io</code>, <code>ethereum-rpc.publicnode.com</code>, <code>cloudflare-eth.com</code></li>
-            <li>Solana : <code>api.mainnet-beta.solana.com</code>, <code>solana-rpc.publicnode.com</code></li>
-            <li>Bittensor : <code>lite.chain.opentensor.ai</code>, <code>api.taostats.io</code></li>
-            <li>Kaspa : <code>api.kaspa.org</code></li>
-            <li>Cours de marché : <code>api.coingecko.com</code></li>
+            <li><strong>Bitcoin &amp; dérivés UTXO :</strong> <code>mempool.space</code>, <code>blockstream.info</code>, <code>blockchair.com</code>, <code>litecoinspace.org</code>.</li>
+            <li><strong>Ethereum &amp; réseaux EVM (BNB, Polygon, Arbitrum, Optimism, Avalanche, Base, etc.) :</strong> <code>1rpc.io</code>, <code>ethereum-rpc.publicnode.com</code>, <code>cloudflare-eth.com</code>, <code>bsc-dataseed.binance.org</code>, <code>etherscan.io</code>, <code>bscscan.com</code>.</li>
+            <li><strong>Solana :</strong> <code>api.mainnet-beta.solana.com</code>, <code>solana-rpc.publicnode.com</code>, <code>helius-rpc.com</code>, <code>jup.ag</code>.</li>
+            <li><strong>Bittensor (TAO) &amp; Subnets :</strong> <code>lite.chain.opentensor.ai</code>, <code>api.taostats.io</code>.</li>
+            <li><strong>Sui, Aptos, Near, TON &amp; Cosmos :</strong> <code>mystenlabs.com</code>, <code>suiet.app</code>, <code>aptoslabs.com</code>, <code>near.org</code>, <code>tonapi.io</code>, <code>toncenter.com</code>, <code>cosmos.directory</code>.</li>
+            <li><strong>XRP, Stellar, Cardano, Kaspa &amp; autres :</strong> <code>xrplcluster.com</code>, <code>stellar.expert</code>, <code>api.kaspa.org</code>, <code>api.kasplex.org</code>.</li>
+            <li><strong>Cours de marché et métadonnées de tokens :</strong> <code>api.coingecko.com</code>, <code>coin-images.coingecko.com</code>.</li>
           </ul>
           <div class="callout">
-            <strong>Note de confidentialité :</strong> lors de chaque requête HTTPS, votre adresse IP
-            publique est transmise aux serveurs tiers distants pour des impératifs techniques
-            d'acheminement réseau, conformément aux politiques de confidentialité de ces fournisseurs.
-            Vous pouvez utiliser un VPN ou configurer vos propres nœuds RPC privés dans les Réglages
-            pour préserver votre anonymat réseau.
+            <strong>Note de confidentialité et adresses IP :</strong> lors de chaque requête réseau vers ces services tiers, votre adresse IP publique
+            est techniquement transmise aux fournisseurs distants pour acheminer les réponses, conformément à leurs politiques respectives.
+            L'association de votre adresse IP à une adresse de portefeuille public pouvant constituer une donnée à caractère personnel indirecte,
+            vous avez la possibilité d'utiliser un VPN ou de configurer vos propres nœuds RPC privés dans les Réglages de l'Application.
+          </div>
+          <div class="callout" style="margin-top:12px;">
+            <strong>Âge minimum :</strong> L'Application et ses services sont réservés aux utilisateurs âgés d'au moins 18 ans (majorité légale).
           </div>
 
           <h3>3.3. Monétisation &amp; publicité (Google Mobile Ads / AdMob)</h3>
@@ -129,7 +134,7 @@
           <ul>
             <li>L'application vous permet d'exporter vos sauvegardes au format chiffré <code>.enc</code>.</li>
             <li>L'algorithme utilisé est le standard international <strong>AES-256-GCM</strong>, avec dérivation de clé <strong>PBKDF2-HMAC-SHA256 (100 000 itérations)</strong> et sel cryptographique aléatoire de 16 octets.</li>
-            <li>Conformité export : conforme aux réglementations d'exportation américaines EAR (Catégorie Mass Market 5D992.c) et déclaré aux autorités compétentes (ANSSI en France).</li>
+            <li>Sécurité locale : les données de vos portefeuilles sont conservées exclusivement au sein du bac à sable (sandbox) applicatif de votre système d'exploitation.</li>
           </ul>
 
           <h2 id="droits">6. Vos droits (RGPD Articles 15 à 22)</h2>
@@ -162,7 +167,7 @@
           <img src="assets/logo.svg" alt="Logo CryptoScan" style="width:28px;height:28px;">
           CryptoScan
         </a>
-        <p class="copyright">© 2026 Projet Open-Source CryptoScan — Tous droits réservés.</p>
+        <p class="copyright">© 2026 CryptoScan — Tous droits réservés.</p>
       </div>
       <div class="footer-links">
         <a href="terms.html">Conditions d'utilisation (CGU)</a>
@@ -171,7 +176,7 @@
         <a href="privacy-en.html">Privacy Policy (EN)</a>
         <a href="data-deletion.html">Suppression des données</a>
         <a href="mailto:matisse.demontis@proton.me">matisse.demontis@proton.me</a>
-        <a href="https://play.google.com/store/apps/details?id=com.cryptoscan.com" rel="noopener">Google Play</a>
+        <a href="https://play.google.com/store/apps/details?id=com.CryptoSCAN.com" rel="noopener">Google Play</a>
       </div>
     </div>
   </footer>
